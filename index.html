@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle wepage theme switcher</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body >
+    <div class="container" id="container">
+    <div class="button-container" id="button-container">
+       <button id="button" onclick="myfunc()">
+
+       </button>
+        
+    </div>
+
+    </div>
+    <script>
+
+     function myfunc(){
+       let b=document.getElementById("button-container");
+       b.classList.toggle("margin-right");
+      
+    if( b.classList.toggle("margin-right"[true])){
+       
+       document.body.style.backgroundColor="black";
+       document.getElementById("button").style.backgroundColor="black";
+       document.getElementById("button-container").style.backgroundColor="white";
+
+
+     }
+     else{
+        document.body.style.backgroundColor="white";
+        document.getElementById("button").style.backgroundColor="white";
+        document.getElementById("button-container").style.backgroundColor="black";
+      
+     }
+    }
+    </script>
+    
+
+</body>
+</html>
