@@ -1,6 +1,6 @@
 
 .container{
-   margin: 200px 0px 0px 500px;
+  margin: 200px 0px 0px 500px;      /* top,right,bottom, left */
    background-color:lightgray;
    background-size: cover;
    width: 500px;
@@ -21,8 +21,6 @@
 .button-container.margin-right{
     justify-content: flex-end;
     
-
-    
 }
 
 
@@ -36,5 +34,23 @@
 
 }
 
+/* responsible design using clapm  */
+.container{
+    width:clamp(120px,30vw,500px);
+    height:clamp(30px,30vw,200px);
+    border-radius:clamp(10px,30vw,100px);
+    margin-left: clamp(0px,30vw,500px);
+
+  }
+  .button-container{
+    width:clamp(70px,30vw,150px);
+    height:clamp(20px,30vw,60px);
+    border-radius:clamp(40px,30vw,70px);
+  }
+  #button{
+    width:clamp(20px,30vw,55px);
+    height:clamp(20px,30vw,55px);
+
+  }
 
 
